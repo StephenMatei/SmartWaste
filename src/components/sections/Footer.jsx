@@ -29,7 +29,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <h3 className="text-white text-lg font-bold mb-4">Smart Waste Management</h3>
-            <p className="text-sm leading-relaxed">
+            <p className="text-white text-sm leading-relaxed">
               Transforming waste management through innovative technology solutions for a cleaner, 
               more sustainable future.
             </p>
@@ -45,7 +45,7 @@ const Footer = () => {
           {/* Quick Links */}
           <div>
             <h4 className="text-white text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2 ">
+            <ul className="space-y-2 text-white ">
               <FooterLink text="Home" onClick={() => scrollToSection('home')} />
               <FooterLink text="About Us" onClick={() => scrollToSection('about')} />
               <FooterLink text="Services" onClick={() => scrollToSection('services')} />
@@ -158,14 +158,14 @@ const FooterLink = ({ text, href, onClick }) => (
     {onClick ? (
       <button
         onClick={onClick}
-        className="text-gray-400 hover:text-white transition duration-300"
+        className="text-white hover:text-blue-700 transition duration-300"
       >
         {text}
       </button>
     ) : (
       <a
         href={href}
-        className="text-gray-400 hover:text-white transition duration-300"
+        className="text-white hover:text-blue-700 transition duration-300"
       >
         {text}
       </a>

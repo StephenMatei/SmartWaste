@@ -67,7 +67,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="md:hidden bg-blue-700 rounded-md">
             <button
               onClick={toggleMenu}
               className="inline-flex items-center justify-center p-2 rounded-md text-white-600 hover:text-cyan-400 hover:bg-gray-100 focus:outline-black"
@@ -116,7 +116,7 @@ const Navbar = () => {
               Contact
             </button>
             <Link to="/signin" className="block px-3 py-2 rounded-md text-blue-600 font-semibold hover:bg-blue-50" onClick={toggleMenu}>Sign In</Link>
-            <Link to="/signup" className="block px-3 py-2 rounded-md bg-white text-white border border-blue-600 hover:bg-blue-200" onClick={toggleMenu}>Sign Up</Link>
+            <Link to="/signup" className="block px-3 py-2 rounded-md bg-white text-blue-700 border-blue-600 hover:bg-blue-200" onClick={toggleMenu}>Sign Up</Link>
           </div>
         </div>
       )}
